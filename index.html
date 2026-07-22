@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Este é o meu primeiro site">
+    <meta name="keywords" content="sites de teste,app,html">
+    <meta name="author" content="Gabriel Barbosa">
+    <title>Meu primeiro site</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0%
+        }
+        .topo{
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+        }
+        .menu{
+            background-color: rgb(59, 59, 59);
+            overflow: hidden;
+        }
+        .menu a{
+            padding: 14px 16px;
+            color: white;
+            float:left;
+            display: block;
+            text-decoration: none;
+        }
+        .coluna{
+            width: 50%;
+            float: left;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Aula de html</h1>
+    <p> estou aprendendo sobre <b>HTML</b></p>
+    <hr>
+    <h2> O que é html?</h2>
+    <p>HTML é uma <i>linguagem de marcação</i> utilizada para criar <u>páginas web</u> utilizando de diversos aspectos para deixar a interface bonita, como por exemplo as tags e meta tags.
+    <hr>
+    <h2> O que são tags e meta tags?</h2>
+    <h3>Meta Tags</h3>
+    <p> As meta tags são utilizadas para forncer informações para o próprio computador a respeito da forma como deve ser lida o processo que está sendo executado, por exemplo:<br><br>
+    meta charset="UTF-8"<br>
+    meta name="viewport" content="width=device-width, initial-scale=1.0"<br>
+    meta name= "description" content="Este é o meu primeiro site"<br>
+    meta name="keywords" content="sites de teste,app,html"<br>
+    meta name="author" content="Gabriel Barbosa"<br><br> Estas Meta tags são tanto como descrições que o computador vai ler, como a descrição do site, as palavras chave para pesquisa e o autor como também itens para a formatação, como o padrão de escrita, a escala do tamanho das letras e etc </p>
+    
+    <h3>Tags para formatação</h3>
+    <p>As tags para formatação são as responsaveis por dar estilo a escrita, trazendo uma diferença maior para o site, como por exemplo:<br><br>
+    'b (do ingles>bold)' para <b>Negrito</b><br>
+    'i (do ingles>italic)' para <i>Itálico</i><br>
+    'u (do ingles>underline)' para <u>Sublinhado</u><br>
+    'br (do ingles>break)' para <br>Quebra de linha<br>
+    'hr (do ingles>horizontal rule)' para Linha horizontal, a mesma linha utilizada para separar os temas das aulas<br>
+    'sup (do ingles>superscript)' para <sup>Superscrito</sup> por exemplo, 10<sup>4</sup><br>
+    'sub (do ingles>subscript)' para <sub>Subscrito</sub> por exemplo, log<sub>3</sub>27<br>
+    'mark (do ingles>mark)' para <mark>Marca texto</mark><br>
+    'del (do ingles>delete)' para <del>Texto riscado</del><br><br>
+    Essas são algumas das tags de formatação utilizadas que eu aprendi até agora.
+    <hr>
+
+    <h3>Elementos de Citação</h3>
+    <p>Essas tags são utilizadas para citar algo sobre o que estamos trabalhando, como por exemplo:</p>
+    <p> Estamos aprendendo HTML.<br> HTML é uma sigla, e uma das tags mais utilizadas para isso é a de abreviação, logo, podemos aplicar a tag 'abbr title="lalalalala"', para um titulo que esteja dentro de uma sigla.</p>
+    <p> Ficando desta forma: Estamos aprendendo <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+    <p> Continuando temos também:<br> 
+        'address' para Endereços: Eu estudo no SESI Adelina
+        <address>Rua Exemplo, 123</address><br> 
+        'cite' para Citação de nome de obras: O livro <cite>O Pequeno Príncipe</cite> é muito bom.<br>
+        'q' para Citação de fala/texto: No filme tal, o ator disse <q>Eu te amo</q>.<br>
+        'blockquote' para dar mais ênfase a um ponto do texto: Olá Buzz, não queria que você descobrisse, mas, <blockquote> Eu sou seu pai.</blockquote> 
+        'bdo' é uma tag bidirecional, ou seja, ela é utilizada para mudar a direção do texto, ou seja, a direção da escrita, utilizando dentro do complemento " dir(direção) rtl (right to left)" ou "ltr (left to right)": <br>
+        <bdo dir="rtl">Invertido</bdo> (rtl) <br>
+        <bdo dir="ltr">Normal (ltr)</bdo><br><br>
+    Todas essas tags são utilizadas também para formatação, mas tendo suas regras de utilização, como por exemplo o 'q' que é utilizado para citações especificamente de falas.
+    </p>
+    <hr>
+
+    <h3>Links ou Hiperlinks</h3>
+    <p> Os links são responsáveis por criar extensões ou criar um caminho levando você de um site a outro, tendo diversas formas e aplicações como por exemplo:</p>
+    <p> Utilizando a tag 'a href="URL"' nós formamos um caminho absoluto (que levam diretamente a um site na mesma aba)<br><a href="https://www.google.com">Acessar o Google</a></p>
+    <p> Também podemos utilizar a tag 'target="_blank"' para abrir o link em uma nova aba:<br><a href="https://www.google.com" target="_blank">Acessar o Google em uma nova aba</a></p><br>
+    <p> Além isso temos também as tags para caminhos relativos, que caminham dentro dos arquivos que temos, por exemplo, no meu vscode eu tenho o arquivo hello.html, utilizando um caminho relativo eu posso acessar esse arquivo e pastas que estejam dentro da mesma pasta:</p>
+    <p> Utilizando a tag 'a href="hello.html"' nós formamos um caminho que nos leva ao arquivo hello.html</p>
+    <p> <a href="hello.html">Acessar o Hello World</a></p>
+    <p> Ou podemos também acessar links dentro de subpastas adicionando o "nome/" o arquivo interior dessa subpasta</p>
+    <a href="subpasta/teste.html">Acessar o teste</a><br>
+    <hr>
+
+    <h3> Tags de Imagem </h3>
+    <p> As tags de imagem são o que trazem cor ou interatividade para o site, permitindo que tudo seja visualmente atraente.<br> Por mais que curioso, as tags de imagem nao precisam de um fechamento, podemos forma-las da seguinte maneira: 'img src="lalalala"'<br>
+        <img src="https://i.pinimg.com/736x/eb/02/9a/eb029a57eced26a978f58d3e4db48f71.jpg"></p>
+    <p>Entretanto, nós precisamos definir atributos para a imagem, como o width, height e alt que comandam a largura(em pixels), altura(em pixels[vale ressaltar que caso apenas uma medida seja adicionada, a outra será ajustada automaticamente de acordo com o tamanho inicial para não deformar a imagem]) e um texto alternativo para pessoas com deficiência visual, sendo um texto que é lido por sintetizadores de voz. Desta forma: 'img src="lalalala" width="500" height="300" alt="Imagem do logo da linguagem de marcação h.t.m.l."' </p>
+        <img src="https://i.pinimg.com/736x/eb/02/9a/eb029a57eced26a978f58d3e4db48f71.jpg" width="300" height="200" alt="Imagem do logo da linguagem de marcação h.t.m.l.">
+    <p>Além disso, vale ressaltar que devemos usar nossas próprias imagens, pois caso usemos imagem do google ou utilizando uma url que não temos direito, podemos sofrer tanto com a falha delas no site, caso alguma seja tirada de ar, ou até com direitos autorais.<br> Para isso, devemos procurar imagens em locais que tenhamos acesso gratis, como por exemplo:<br><br>
+    <b>-Pexels</b><br>
+    <b>-Pixabay</b></br>
+    <b>-Unsplash</b><br>
+    <b>-Freepik</b><br><br>
+    A partir disso, podemos adicionar essas imagens em nosso site, utilizando o caminho relativo, ou seja, salvando a imagem dentro de uma subpasta do site e buscando essa imagem dentro desta subpasta, ao invés de utilizarmos caminhos absolutos e imagens já prontas.<br>
+    Por exemplo, eu tenho uma subpasta chamada "img" e dentro dela tenho uma imagem de um carro, com isso podemos utilizar a tag 'img src="img/carro.jpg"'(utilizando os atributos caso desejados) para adicionar a imagem do carro em nosso site(é importante que salvemos essas imagens diretamente na pasta img, para que elas não fiquem presas em alguma outra pasta do computador e você não consiga acha-las em sua subpasta, para isso, você pode procurar a opção em seu próprio navegador para que ao selecionar uma imagem ele pergunte em que local você deseja salvá-la.<br> Ficando desta forma:<br><br>
+        <img src="img/carro.jpg" width="300" alt="Imagem de um carro">
+</p>
+<hr>
+    <h4>Dimensões, pesos, formatos.</h4>
+    <p>Toda imagem tem suas dimensões próprias em pixels e seu peso varia de acordo com o tamanho e a qualidade da imagem, logicamente, uma imagem com maior taxa de pixel, tambem tem uma alta qualidade e maiores dimensões.<br> Como o computador precisa carregar essas imagens destes sites, quanto maior o peso, mais lento será o carregamento da mesma, por isso, para facilitar o processom, nós usamos compressores de imagens(que nao necessariamente diminuem a qualidade)pesquisando no próprio google e repetindo o processo em diversos compressores diferentes até que você chegue num ponto bom, utilizando compressores como:<br>
+    <b>-Compressjpg</b><br>
+    <b>-Tinyjpg</b><br>
+    <b>-Easy resize(o mais recomendado)</b><br><br>
+    Além disso, temos também a opção de trabalharmos com png's e gifs, para isso, podemos criar nossas próprias imagens utilizando programas de edição como o photoshop ou o photopea(gratuito) para png ou buscarmos gifs em sites públicos como o GIPHY adicionando gifs através da url.<br> Desta forma:<br>
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/source/5eeea355389655.59822ff824b72.gif" width="300"><br>
+    O mais comum a ser usado em sites, não são imagens compostas mas sim icones, que são imagens mais simples e pequenas, que podem ser criadas em sites como o flaticon. Esses icones e imagens podem ser adicionados ao lado de algo texto quando a tag 'img' é utilizada dentro do paragráfo ou título.<br>Como por exemplo: 'h4' img src="img/exemplo.png" TITULO EXEMPLO'h4'<br> Ficando desta forma:<br>
+    <h2><img src="img/brazil.png" width="20" alt="Bandeira do Brasil"> Teste com bandeira <img src="img/brazil.png" width="20" alt="Bandeira do Brasil"></h2>
+</p>
+<hr>    
+    <h4>Mapeamento de imagem</h4>
+    <p>O mapeamento de imagem é uma forma de criar links dentro de uma imagem, ou seja, você pode criar um link para cada parte da imagem, como por exemplo, nós temos a imagem da bandeira do Brasil, e podemos criar um link/caminho a partir de cada local onde o usuario clicar, por exemplo, caso ele clique na cor amarela, abrimos o link do google, caso ele clique na verde, abrimos o link do youtube e assim por diante.<br> Para isso, utilizamos recursos como o imagemap para mapear a imagem colocando formas geometricas e destinos para cada uma, e após isso o próprio site gera um código html com as dimensões exatas de cada forma e local onde voce separou, formando uma tag map e img (vale ressaltar que as tags são adicionadas de acordo com o tamanho original da imagem, então caso você utilize o width e height, as coordenadas permanecem anteriores, então isso desfaz o mapeamento, por isso, é recomendado que você deixe a imagem no tamanho que vai usar antes de mapear.).<br> Desta forma:<br>
+<!-- Image Map Generated by http://www.image-map.net/ -->
+    <img src="img/brazil.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="GOOGLE" title="GOOGLE" href="https://google.com" coords="45,257,255,100,468,256,256,412" shape="poly">
+        <area target="_blank" alt="YOUTUBE" title="YOUTUBE" href="https://youtube.com" coords="256,255,257" shape="circle">
+    </map>
+</p>
+
+    <h4> Links para imagens </h4>
+    <p> Por fim, além de podermos mapear a imagem, podemos adicionar um link diretamente a imagem toda utilizando a tag 'a href="URL"' ao redor da tag 'img', por exemplo:<br>
+    'a href="https://exemplo.com"(ou usando "target="_blank" para abrir em uma nova aba)' 'img src="img/exemplo.jpg"' '/a'<br><br>
+        <a href="https://pt.wikipedia.org/wiki/Brasil" target="_blank"> <img src="img/brazil.png" width="100" alt="Bandeira do Brasil"></a>
+<hr>
+</p>
+
+    <h3>Tabelas</h3>
+    <p>As tabelas são utilizadas para organizar informações em linhas e colunas. Utilizando tags como 'table' para iniciar a tabela, 'tr(table row)' para criar linhas e 'th(table header)' ou 'td(table data)' para criar o conteúdo.<br> Desta forma:<br>
+    'table'<br>
+        'tr'<br>
+            'th' Cabeçalho 1 '/th'<br>
+            'th' Cabeçalho 2 '/th'<br>
+        '/tr'<br>
+        'tr'<br>
+            'td' Dado 1 '/td'<br>
+            'td' Dado 2 '/td'<br>
+        '/tr'<br>
+    '/table'<br><br>
+    Resultando em:<br>
+    <table>
+        <tr>
+            <th> Cabeçalho 1 </th>
+            <th> Cabeçalho 2 </th>
+        </tr>
+        <tr>
+            <td> Dado 1 </td>
+            <td> Dado 2 </td>
+        </tr>
+    </table><br>
+Além disso, também podemos adicionar atributos para a tabela ficar mais bonita como:<br><br>
+'border="1"' para adicionar uma borda a tabela<br>
+'width="100%"' para definir a largura da tabela<br>
+'height="100%"' para definir a altura da tabela<br>
+'style="background-color:blue"' para definir a cor de fundo da tabela<br>
+'style="color:white"' para definir a cor do texto da tabela<br>
+'style="text-align:center"' para centralizar o texto da tabela<br><br>
+Todos esses atributos são mais vistos em CSS para a estilização do site, mas ainda assim são muito uteis. Ficando desta forma:<br><br>
+    <table style="text-align: center; background-color:rgb(109, 216, 243) ;color:white;" border="1"width="40%">
+        <tr>
+            <th> Nome </th>
+            <th> Idade </th>
+            <th> Cidade </th>
+        </tr>
+        <tr>
+            <td> Gabriel </td>
+            <td> 16 </td>
+            <td> Mauá </td>
+        </tr>
+    </table>
+</p>
+<hr>
+
+    <h3>Formulários</h3>
+    <p>Os formularios são feitos pra interação do site, como o echo e read do shellscript. Por isso, eles são muito importantes<br>
+    Todos os formularios começam com a tag 'form' e dentro dela nós podemos adicionar os inputs e outputs, por exemplo, dentro da tag 'form'podemos adicionar outras tags que são como diferentes campos de entrada pro usuario digitar, por exemplo o campo de texto que é um 'input type="text".<br>
+    Os principais campos e tags são:<br><br>
+        'form' que é responsavel pelos formularios<br>
+        'input' que cria a caixa de entrada<br>
+        'label' é como um rotulo para a caixa<br>
+        'select' é um campo diferente do input, é como uma caixa de seleção<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'option' tag para as opções de cada resposta selecionavel<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'value=""' é o valor que será adicionado para cada seleção possivel<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'disabled' que é usado para a opção padrao como "selecione uma cor" mas que não é selecionavel <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'selected' define uma opção como pré selecionada<br>
+        'button' é um botão clicavel<br>
+        'textarea' é um campo de texto maior e com seu tamanho manipulavel<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'rows' para definir a quantidade de linhas<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'cols' para definir a quantidade de colunas<br><br>
+        Além disso também temos os atributos para adicionar dentro das tags, como:<br><br>
+        'for="id_exemplo"' utilizado dentro da tag label que faz com que o rotulo externo direcione o usuario para a escrita.<br>
+        'id="exemplo"' que é o identificador para o 'for'<br>
+        'type="..."' que da o tipo do campo input<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-'text' para caixas de texto<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-'email' para so aceitar padroes de emails<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-'password' que deixa a escrita oculta como uma senha<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-'submit' que é o botão de enviar do formulario<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-'value' texto interior do botao de enviar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-'radio' é a area com as bolinhas selecionaveis<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'label e id' que são o rotulo da bolinha e o identificador<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'name' é o nome das opções, o nome é como a o quadrado onde cada um vai, por exemplo, ao adicionar todos com o name "animal", voce so pode escolher uma opção para adicionar nesse quadrado.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'value' que é o valor, ele é o nome de cada opção<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'checkbox' que é como uma lista de multipla escolha, segue a mesma ideia do radio <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(vale ressaltar que nesse caso os names tem que ser diferentes)<br>
+        'placeholder' que é o rotulo que fica dentro da caixinha de escrita<br>
+        'required' adicionado dentro do campo input que faz com que o campo tenha seu preenchimento obrigatorio<br><br> Ficando desta forma:<br><br>
+       
+    </p><br>
+
+    <a href="formulario.html">Acessar Formulario</a>
+<hr>
+
+    <h3>Listas</h3>
+    <p>As listas servem pra organizar melhor as ideias ou os afazeres.</p>
+    <h4>Listas não ordenadas</h4>
+    <p>As listas não ordenadas são aquelas que não possuem uma ordem específica, ou seja, não importa a ordem em que os itens estão, eles são apenas uma lista de coisas. Para isso, utilizamos a tag 'ul(unerdered list)' para iniciar a lista e 'li' para cada item da lista.<br> Desta forma:<br>
+    'ul'<br>
+        'li' Item 1 '/li'<br>
+        'li' Item 2 '/li'<br>
+        'li' Item 3 '/li'<br>
+    '/ul'<br><br>
+    Resultando em:<br>  
+    <ul>
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>     
+    </ul>
+    
+    <h4>Listas ordenadas</h4>
+    <p>As listas ordenadas são aquelas que possuem uma ordem específica, ou seja, a ordem dos itens importa. Para isso, utilizamos a tag 'ol(ordered list)' para iniciar a lista e 'li' para cada item da lista.<br> Desta forma:<br>
+    'ol'<br>
+        'li' Item 1 '/li'<br>
+        'li' Item 2 '/li'<br>
+        'li' Item 3 '/li'<br>
+    '/ol'<br><br>
+    Resultando em:<br>
+    <ol>
+            <li> Item 1 </li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+    </ol>
+<hr>
+    <h3>Iframes</h3>
+    <p>Os iframes são a forma de rodar uma pagina dentro de outra pagina. Utilizando a tag 'iframe src="url(ou algum caminho do nosso arquivo)" (adicionando width, height e title)' e fechando com '/iframe'. <br>Vale ressaltar que, para adicionar videos do youtube, é preciso ir no video pelo proprio navegador, abir a opção de compartilhar e incorporar.<br> Desta forma:<br>
+    <iframe src="subpasta/teste.html" width="100%" height="300" title="Youtube"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/448sdzWsnMs?si=slU9nhVP5EtLykNw" title="YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>Aqui nós podemos também adicionar mais atributos ao iframe, como 'frameborder="0"' para remover a borda do iframe, mas esses são mais aprofundados no CSS.</p>
+    <p>Além disso, também podemos fazer com que os nossos links e arquivos abram na pagina com o iframe, adicionando um iframe com todas as propriedades como width e height, mas sem adicionar um caminho o URL, desta forma:<br> 
+        'iframe src="" width="100%" height="300" title="Youtube"></iframe'<br> E adicionando o atributo 'target="nome do iframe"' na tag 'a href="(com o link que voce deseje)"' para que o link abra dentro do iframe, desta forma:<br>
+            Por exemplo, criando um link chamado:
+     <a href="subpasta/teste.html" target="iframe1">Acessar o Arquivo Teste</a><br>
+            e adicionando o iframe com o nome "iframe1" como 'iframe src="" width="100%" height="300" title="Youtube" name="iframe1"'/iframe'<br> Desta forma, ao clicar no link, ele abrirá dentro do iframe, sem sair da pagina.<br>
+    <iframe src="" width="100%" height="300" title="Arquivo teste" name="iframe1" style="border:none"></iframe>
+
+    </p>
+</p>
+<hr>
+
+    <h3>Audio</h3>
+    <p>O audio é a forma de dar sons e musica para paginas atraves de um link. Para isso criamos um arquivo para adicionar a tag do audio e adicionamos uma tag 'a href="audio.html que tem o conteudo e tag de audio, ou adicionando direto a tag audio para abrir o reprodutor na propria pagina </p>
+    <a href="audio.html">Acessar o Áudio</a><br>
+        <p> Dentro da pagina audio.html, nós adicionamos todo o conteudo e a tag para que seja executado o audio, utilizando a tag 'audio' e dentro desta tag a tag 'source src="caminho do audio"(seja relativo ou absoluto) type="tipo do audio(geralmente audio/mpeg quando o o arquivo é mp3, mas pode ser audio/wav quando o arquivo é wav)"' e fechando a tag 'audio'. Além disso, para que o controle de reprodução apareça, devemos adicionar o atributo 'controls' dentro no interior tag 'audio' ('audio controls') e também 'controlsList="nodownload" para nao disponibilizar o download do audio diretamente<br>
+            Desta forma:<br>
+        <p> 'audio controls'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    'source src="audio/racionais.mp3" type="audio/mpeg"''<br>
+            '/audio'</p>
+        </p>
+
+    <p>Ou adicionando o reprodutor e o audio diretamente na pagina sem abrir outro arquivo(seguindo o mesmo padrao de codigo mas sem a necessidade de um 'a href' para abrir a pagina de audio.</p>
+        <!-- Teste de audio na mesma pagina -->
+         <audio controls>
+            <source src="audio/racionais.mp3" type="audio/mpeg">
+         </audio>
+            <br>
+
+    <p> Esses milhares de links que ja criamos podem ser usados como menu, e fugindo um pouco para css, aprendemos um codigo: '&nbsp;' que é utilizado para adicionar espaços entre os elementos, como por exemplo, entre os links para que eles nao fiquem colados, desta forma:<br>
+        <a href="audio.html">Acessar o Áudio</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="subpasta/teste.html">Acessar o Arquivo Teste</a>
+    </p>
+<hr>
+
+    <h3>Video</h3>
+    <p>O video é a forma de dar videos para paginas atraves de um link. Ele é muito semelhante a tag de audio, entao nós podemos tanto criar outro arquivo para o video, quanto adiciona-lo diretamente na pagina principal, seguindo os passos anteriores da tag de audio. A tag de video tem algumas diferenças como o tipo de video que é 'video/mp4(o mais comum)'. Utilizando a tag 'video' e dentro desta tag a tag 'source src="caminho do video"(seja relativo ou absoluto) type="tipo do video(geralmente video/mp4 quando o o arquivo é mp4, mas pode ser video/webm quando o arquivo é webm)"' e fechando a tag 'video'.<br>
+            Desta forma:<br>
+'video controls width="100%" controlsList="nodownload"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    'source src="video/racionais.mp4" type="video/mp4"'<br>
+'/video'</p>
+        Quando o site é carregado, o video fica com a tela preta até que seja iniciado, entretanto, podemos adicionar algumas tags para configurar o reprodutor, como:<br>
+<b>-'autoplay' para reproduzir o video assim que a pagina for aberta</b><br>
+<b>-'poster="caminho de alguma imagem" para adicionar uma thumbnail</b>
+<b>-'controlsList="nodownload nofullscreen"' para tirar a opção de download e tela cheia</b><br>
+<b>-'width e height' para mudar o tamanho</b><br>
+<b>-'controls' para que o controle de reprodução apareça</b><br>
+<b>-'disablepictureinpicture' para tirar a opção de picture-in-picture</b><br><br>
+        Todos estes atributos são adicionados na tag video, como: 'video controls width...'<br> Por fim, podemos abrir a pagina!<br><br>
+<a href="video.html">Acessar o VIDEO</a>
+
+</p>
+<hr>
+
+    <h3>Divs e HTML Semantico</h3>
+        <p>As divs são como divisorias manipulaveis de acordo com atributos css, por exemplo, um site disposto de acordo com a imagem a baixo, tem 4 divisorias, 4 blocos de conteudo:<br>
+            <img src="img/div.png" width="300"><br><br>
+            Por exemplo:
+        </p>
+<hr>
+            <div>
+                <h3>TOPO</h3>
+            </div>
+
+            <div>
+                <a href="hello.html">Link</a>
+                <a href="hello.html">Link</a>
+                <a href="hello.html">Link</a>
+                <a href="hello.html">Link</a>
+            </div>
+
+            <div>
+                <h3>Coluna</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, perferendis optio perspiciatis maiores ut explicabo? Commodi nobis modi dolore, consectetur, perspiciatis in, autem delectus asperiores labore eaque non reiciendis odio.</p>
+            </div>
+
+             <div>
+                <h3>Coluna</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, perferendis optio perspiciatis maiores ut explicabo? Commodi nobis modi dolore, consectetur, perspiciatis in, autem delectus asperiores labore eaque non reiciendis odio.</p>
+            </div>
+<hr>
+
+            <p>Aqui todo este conteudo está separado em 4 divs, entretanto, so estão parecendo um amontoado ou segmento de conteudos em paragrafos, justamente pela falta de atributos<br>Para isso, precisamos adicionar um "nome" para cada div, colocando 'class="nome", assim nós conseguimos mexer separadamente em cada bloco, e após isso, adicionar a tag 'style' abaixo das metatags do nosso projeto, pois ela é quem vai mexer no estilo de cada div.<br> Desta forma:<br><br>
+                meta tags....<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'title'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'style'<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.topo'
+            Dentro deste style, que esta fora da nossa head e body, nós adicionamos diferentes atributos css através do nome que adicionamos na nossa div, com o comando '.nome{ }' e dentro dessas chaves adicionamos os atributos, como o background color ou o text-align<br>
+            Além disso, também podemos manipular tags dentro dessas divs, por exemplo, na div class="menu", caso nós mudemos a cor do fundo, talvez o texto das tags 'a href' fiquem dificeis de serem vistos, para isso, voce pode manipular a propria tag adicionando o comando '.menu a{ }', este 'a' após o menu corresponde à tag 'a href' e assim por diante. Obviamente, este é um conteudo mais visto em CSS, mas o importante é o conceito de divs.<br>
+        Ficando desta forma:<br>
+<hr>
+            <div class="topo">
+                <h3>TOPO</h3>
+            </div>
+
+            <div class="menu">
+                <a href="hello.html">Link</a>
+                <a href="hello.html">Link</a>
+                <a href="hello.html">Link</a>
+                <a href="hello.html">Link</a>
+            </div>
+
+            <div class="coluna">
+                <h3>Coluna</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, perferendis optio perspiciatis maiores ut explicabo? Commodi nobis modi dolore, consectetur, perspiciatis in, autem delectus asperiores labore eaque non reiciendis odio.</p>
+            </div>
+
+            <div class="coluna">
+                <h3>Coluna</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, perferendis optio perspiciatis maiores ut explicabo? Commodi nobis modi dolore, consectetur, perspiciatis in, autem delectus asperiores labore eaque non reiciendis odio.</p>
+            </div>
+<hr>
+        <p>Entretanto, o navegador nao entende o que são os nomes, ele so entende a propriedade, mas nao entende que a classe topo é um topo, ele so segue os atributos que nós demos e assim nasceu o html semantico.<br>
+        <h4>HTML Semantico</h4>
+            <p>o html semantico surgiu pra trazer um significado para o codigo, por exemplo, ao inves de usarmos 'div class="topo" e corrermos o risco do desenvolvedor futuro nao entender o que é um topo, nós podemos usar a tag 'header' que corresponde justamente ao topo, fazendo com que o navegador e até algum desenvolvedor entenda que aquela area corresponde ao topo, mesmo que o nome da div seja algo aleatorio como "praia", a tag 'header' é correspondente ao topo. Também temos as tags semanticas:<br><br>
+            'nav'(menu/navegação do site)<br>
+            'footer'(rodapé)<br>
+            'section'(seçoes do site)<br><br>
+        Para acessar mais tags semanticas, as mais conhecidas acesse este site: <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML SEMANTICO</a>
+            </p>
+        </p>
+            
+
+    </body>
+</html>

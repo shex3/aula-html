@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    
+    <h1>Formulário</h1>
+        <form>
+            <!--Caixas de texto, email e senha-->
+            <h3></h3>
+            <input type="text" placeholder="Digite seu nome" id="nome" required>
+                <label for="nome">Nome:</label><br>
+            <input type="email" placeholder="Digite seu email" id="email" required>
+                <label for="email">email:</label><br>
+            <input type="password" placeholder="Digite sua senha" id="senha" required>
+                <label for="Senha">Senha:</label><br>
+<hr>
+            <!--Caixas de escolha unica-->
+            <h3>Você prefere:</h3>
+            <input type="radio" id="gato" name="animal" value="Gato">
+                <label for="gato">Gato</label><br>
+            <input type="radio" id="cachorro" name="animal" value="Cachorro">
+                <label for="cachorro">Cachorro</label><br>
+<hr>
+            <!--Caixas de multipla escolha-->
+            <h3>O que você tem em casa?</h3>
+            <input type="checkbox" id="tv" name="item1" value="TV">
+                <label for="tv">Televisão</label>
+            <input type="checkbox" id="geladeira" name="item2" value="Geladeira">
+                <label for="geladeira">Geladeira</label>
+            <input type="checkbox" id="fogao" name="item3" value="Fogão">
+                <label for="fogao">Fogão</label>
+<hr>
+            <!--Campo de caixa de seleção-->
+            <h3>Selecione uma cor</h3>
+            <select>
+                <option value="Selecione uma cor" selected disabled></option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Azul">Azul</option>
+                <option value="Verde">Verde</option>
+                <option value="Amarelo">Amarelo</option>
+            </select>
+<hr>
+            <!--Campo de texto maior-->
+            <h3>Feedback</h3>
+            <textarea cols="55" rows="15" placeholder="Digite uma mensagem"></textarea>
+<hr>
+            <!--Botão de enviar formulario-->
+            <input type="submit" value="Enviar Formulário">
+
+
+        </form><br>
+
+    <a href="index.html">Voltar para a página principal</a>
+
+</body>
+</html>
